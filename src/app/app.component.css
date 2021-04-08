@@ -1,0 +1,15 @@
+.bg{
+    background-color: black;
+    padding-bottom: 50px;
+    padding-top: 30px;
+
+}
+
+.form{
+margin-left: 50px;
+margin-top: 80px;
+margin-right: 50px;
+background-color:lightskyblue;
+border-style: double;
+text-align: left;
+}

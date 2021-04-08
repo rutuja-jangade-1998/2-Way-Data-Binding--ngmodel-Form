@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'simpleform';
-}
+  info;
+  constructor(private formBuilder: FormBuilder){
+  this.info = this.formBuilder.group({
+  name: '',
+  email: '',
+  attendees: '',
+  position:'',
+  department:'',
+  date:'',
+  StartTime:'',
+  EndTime:'',
+  SpecialInstruction:'',
+  })
+  }
+
+  onSubmit(values){
+  console.warn("Form Submit", values) 
+  }
+  }
